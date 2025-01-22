@@ -25,10 +25,10 @@ class Solution:
                 target = bottoms[i]
                 break 
         
-        topR = botR = 0
+        topR = botR = 0                             # rotate min value
 
         for i in range(len(tops)):
-            if tops[i] != target and bottoms[i] != target:
+            if tops[i] != target and bottoms[i] != target:      # faulty
                 return -1
             if tops[i] != target:
                 topR +=1
